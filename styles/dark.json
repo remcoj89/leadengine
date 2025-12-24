@@ -1,0 +1,30 @@
+{
+  "version": 3,
+  "title": "Dark",
+  "styles": {
+    "color": {
+      "background": "#0F0F0F",
+      "text": "#F5F5F5"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "#7AA2FF"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "color": {
+          "background": "#7AA2FF",
+          "text": "#0F0F0F"
+        }
+      },
+      "core/group": {
+        "color": {
+          "background": "#161616"
+        }
+      }
+    }
+  }
+}
