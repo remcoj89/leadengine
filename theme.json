@@ -4,14 +4,14 @@
   "settings": {
     "appearanceTools": true,
     "layout": {
-      "contentSize": "1200px",
-      "wideSize": "1440px"
+      "contentSize": "1140px",
+      "wideSize": "1200px"
     },
     "color": {
       "defaultPalette": false,
       "defaultGradients": false,
       "palette": [
-        { "slug": "black", "name": "Black", "color": "#00000" },
+        { "slug": "black", "name": "Black", "color": "#000000" },
         { "slug": "rose-punch", "name": "Rose Punch", "color": "#e03d8e" },
         {
           "slug": "majorelle-blue",
@@ -32,7 +32,7 @@
         {
           "slug": "cta",
           "name": "CTA",
-          "gradient": "linear-gradient(135deg, #0e03d8e 0%, #00B3A4 100%)"
+          "gradient": "linear-gradient(135deg, #e03d8e 0%, #00B3A4 100%)"
         }
       ]
     },
@@ -55,9 +55,7 @@
               "fontFamily": "Merriweather",
               "fontStyle": "bold",
               "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/Merriweather24pt-Bold.woff2"
-              ]
+              "src": ["file:./assets/fonts/Merriweather24pt-Bold.woff2"]
             },
             {
               "fontFamily": "Merriweather",
@@ -69,9 +67,7 @@
               "fontFamily": "Merriweather",
               "fontStyle": "normal",
               "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/Merriweather24pt-Bold.woff"
-              ]
+              "src": ["file:./assets/fonts/Merriweather24pt-Bold.woff"]
             }
           ]
         },
@@ -90,9 +86,7 @@
               "fontFamily": "Lato",
               "fontStyle": "normal",
               "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/Lato-Bold.woff2"
-              ]
+              "src": ["file:./assets/fonts/Lato-Bold.woff2"]
             },
             {
               "fontFamily": "Lato",
@@ -104,9 +98,7 @@
               "fontFamily": "Lato",
               "fontStyle": "normal",
               "fontWeight": "600",
-              "src": [
-                "file:./assets/fonts/Lato-Bold.woff"
-              ]
+              "src": ["file:./assets/fonts/Lato-Bold.woff"]
             }
           ]
         }
@@ -161,7 +153,6 @@
       ]
     }
   },
-
   "styles": {
     "color": {
       "background": "var(--wp--preset--color--base)",
@@ -174,7 +165,7 @@
     },
     "elements": {
       "link": {
-        "color": { "text": "var(--wp--preset--color--primary)" }
+        "color": { "text": "var(--wp--preset--color--jet-black)" }
       },
       "button": {
         "border": { "radius": "999px" },
@@ -186,18 +177,15 @@
     },
     "blocks": {
       "core/button": {
-        "border": { "radius": "999px" },
         "color": {
-          "background": "var(--wp--preset--color--jet-black)",
+          "background": "var(--wp--preset--color--black)",
+          "gradient": "var(--wp--preset--gradient--cta)",
           "text": "var(--wp--preset--color--white)"
-        },
+        }
+      },
+      "core/image": {
         "spacing": {
-          "padding": {
-            "top": "0.9rem",
-            "right": "1.4rem",
-            "bottom": "0.9rem",
-            "left": "1.4rem"
-          }
+          "margin": { "top": "0", "bottom": "0" }
         }
       },
       "core/paragraph": {
@@ -205,7 +193,7 @@
       },
       "core/heading": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--sans)",
+          "fontFamily": "var(--wp--preset--font-family--merriweather)",
           "lineHeight": "1.15"
         }
       }

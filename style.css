@@ -14,3 +14,18 @@
  * License:           GNU General Public License v2.0 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
+
+
+@media (max-width: 980px) {
+    .wp-block-column {
+        padding-right: var(--wp--preset--spacing--4) !important;
+        padding-left: var(--wp--preset--spacing--4) !important;
+    }
+}
+
+
+.container {
+  margin-inline: auto;
+  max-width: 1140px;
+  width: 100%;
+}

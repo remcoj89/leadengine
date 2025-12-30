@@ -7,70 +7,41 @@
  */
 ?>
 
-<!-- wp:group {"layout":{"type":"constrained"},"gradient":"hero","style":{"spacing":{"padding":{"top":"var(--wp--preset--spacing--9)","bottom":"var(--wp--preset--spacing--9)"}}}} -->
-<div class="wp-block-group">
+<!-- wp:group {"tagName":"div","layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|6"}}}} -->
+  <div class="wp-block-columns"><!-- wp:column {"style":{"border":{"radius":{"topRight":"350px"}}},"backgroundColor":"soft-linen"} -->
+   <div class="wp-block-column has-soft-linen-background-color has-background" style="border-top-right-radius:350px"><!-- wp:image {"id":41,"sizeSlug":"large","linkDestination":"none"} -->
+      <figure class="wp-block-image size-large">
+        <img src="http://leadengine.local/wp-content/uploads/2025/12/lijfstijl-819x1024.webp" alt="Rennende energieke man" class="wp-image-41"/>
+      </figure>
+    <!-- /wp:image -->
+    </div>
+    <!-- /wp:column -->
 
-	<!-- wp:columns {"verticalAlignment":"center"} -->
-	<div class="wp-block-columns are-vertically-aligned-center">
+    <!-- wp:column {"verticalAlignment":"center"} -->
+    <div class="wp-block-column is-vertically-aligned-center"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
+    <p style="text-transform:uppercase">De physys 6 domeinen methode</p>
+    <!-- /wp:paragraph -->
 
-		<!-- wp:column {"width":"52%"} -->
-		<div class="wp-block-column" style="flex-basis:52%">
+    <!-- wp:heading {"level":1,"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontFamily":"merriweather"} -->
+    <h1 class="wp-block-heading has-merriweather-font-family" style="font-style:normal;font-weight:400">Liever klachtenvrij en leven zonder beperkingen?</h1>
+    <!-- /wp:heading -->
 
-			<!-- wp:image {"sizeSlug":"large"} -->
-			<figure class="wp-block-image size-large">
-				<img alt="" />
-			</figure>
-			<!-- /wp:image -->
+    <!-- wp:paragraph -->
+    <p>Door inzicht te krijgen in je stijl van leven ontdek je hoeveel je lichaam nog kan.  Je zult verrast zijn hoe krachtig het herstellend vermogen van het lichaam is!</p>
+    <!-- /wp:paragraph -->
 
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column {"width":"48%"} -->
-		<div class="wp-block-column" style="flex-basis:48%">
-
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var(--wp--preset--spacing--4)"}}} -->
-			<div class="wp-block-group">
-
-				<!-- wp:paragraph {"fontSize":"sm","textColor":"muted"} -->
-				<p class="has-muted-color has-text-color has-sm-font-size">
-					DE PHYSIS 6 DOMEINEN METHODE
-				</p>
-				<!-- /wp:paragraph -->
-
-				<!-- wp:heading {"level":1,"fontSize":"3xl"} -->
-				<h1 class="wp-block-heading has-3xl-font-size">
-					Liever klachtenvrij leven zonder beperkingen?
-				</h1>
-				<!-- /wp:heading -->
-
-				<!-- wp:paragraph {"fontSize":"lg"} -->
-				<p class="has-lg-font-size">
-					Door inzicht te krijgen in je stijl van leven ontdek je hoeveel je lichaam nog kan.
-				</p>
-				<!-- /wp:paragraph -->
-
-				<!-- wp:buttons -->
-				<div class="wp-block-buttons">
-
-					<!-- wp:button {"gradient":"cta"} -->
-					<div class="wp-block-button">
-						<a class="wp-block-button__link wp-element-button">
-							Plan een gratis intake
-						</a>
-					</div>
-					<!-- /wp:button -->
-
-				</div>
-				<!-- /wp:buttons -->
-
-			</div>
-			<!-- /wp:group -->
-
-		</div>
-		<!-- /wp:column -->
-
-	</div>
-	<!-- /wp:columns -->
-
+    <!-- wp:buttons -->
+    <div class="wp-block-buttons"><!-- wp:button {"textColor":"white","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}},"typography":{"textTransform":"uppercase","fontStyle":"normal","fontWeight":"400"}}} -->
+      <div class="wp-block-button">
+        <a class="wp-block-button__link has-white-color has-text-color has-link-color wp-element-button" style="font-style:normal;font-weight:400;text-transform:uppercase">Plan een gratis  intake</a>
+      </div>
+      <!-- /wp:button -->
+      </div>
+      <!-- /wp:buttons -->
+      </div>
+      <!-- /wp:column -->
+    </div>
+    <!-- /wp:columns -->
 </div>
 <!-- /wp:group -->
