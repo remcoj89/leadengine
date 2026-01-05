@@ -7,7 +7,7 @@
  */
 ?>
 
-<!-- wp:group {"tagName":"div","layout":{"type":"constrained"}} -->
+<!-- wp:group {"metadata":{"name":"hero-split"}, "tagName":"div","layout":{"type":"constrained"}} -->
 <div class="wp-block-group"><!-- wp:columns {"verticalAlignment":null,"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|6"}}}} -->
   <div class="wp-block-columns"><!-- wp:column {"style":{"border":{"radius":{"topRight":"350px"}}},"backgroundColor":"soft-linen"} -->
    <div class="wp-block-column has-soft-linen-background-color has-background" style="border-top-right-radius:350px"><!-- wp:image {"id":41,"sizeSlug":"large","linkDestination":"none"} -->

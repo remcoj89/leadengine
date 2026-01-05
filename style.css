@@ -26,6 +26,20 @@
 
 .container {
   margin-inline: auto;
-  max-width: 1140px;
+  max-width: 1240px;
   width: 100%;
+}
+
+.image-column {
+	height: 100%;
+}
+
+.image-column figure,
+.image-column img {
+	height: 100%;
+}
+
+.image-column img {
+	width: 100%;
+	object-fit: cover;
 }
