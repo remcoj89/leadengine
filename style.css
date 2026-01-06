@@ -15,31 +15,121 @@
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  */
 
+/* ==========================================================================
+   RESPONSIVE OVERRIDES
+   ========================================================================== */
 
+/* Mobile padding fix for Gutenberg columns
+   Prevents edge-to-edge content on small screens */
 @media (max-width: 980px) {
-    .wp-block-column {
-        padding-right: var(--wp--preset--spacing--4) !important;
-        padding-left: var(--wp--preset--spacing--4) !important;
-    }
+  .wp-block-column {
+    padding-right: var(--wp--preset--spacing--4) !important;
+    padding-left: var(--wp--preset--spacing--4) !important;
+  }
 }
 
+/* ==========================================================================
+   LAYOUT CONTAINERS & HELPERS
+   ========================================================================== */
 
-.container {
-  margin-inline: auto;
-  max-width: 1240px;
+/* Flex utility group
+   Used for simple horizontal layouts outside core blocks */
+.flex-group {
+  display: flex;
+  gap: var(--wp--preset--spacing--5);
+}
+
+/* Alignment helper */
+.align-center {
+  align-items: center;
+}
+
+/* ==========================================================================
+   IMAGE & MEDIA NORMALIZATION
+   ========================================================================== */
+
+/* Base image reset
+   Ensures responsive images and prevents layout shifts */
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  height: auto;
+  max-width: 100%;
+  shape-margin: 1rem;
+  vertical-align: middle;
+}
+
+/* Gutenberg image block full-height support
+   Used in flex / split layouts */
+.wp-block-image {
+  width: 100%;
+  flex-grow: 1;
+  height: 100%;
+}
+
+/* ==========================================================================
+   HEADER / NAVIGATION BAR BEHAVIOR
+   ========================================================================== */
+
+@media (width <= 768px) {
+  .site-header {
+    position: relative;
+  }
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* ==========================================================================
+   IMAGE COLUMN (FULL HEIGHT BEHAVIOR)
+   ========================================================================== */
+
+/* Parent column must define height context */
+.image-column {
+  height: 100%;
+}
+
+/* Ensure figure and image stretch to column height */
+.image-column figure,
+.image-column img {
+  height: 100%;
+}
+
+/* Cover behavior for images in split layouts */
+.image-column img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* ==========================================================================
+   TEXT / CONTENT HELPERS
+   ========================================================================== */
+
+/* Text column in flex layouts */
+.text-column {
+  flex-grow: 1;
   width: 100%;
 }
 
-.image-column {
-	height: 100%;
+/* List utilities */
+.no-bullets {
+  list-style: none;
 }
 
-.image-column figure,
-.image-column img {
-	height: 100%;
+.list-align-right {
+  text-align: right;
 }
 
-.image-column img {
-	width: 100%;
-	object-fit: cover;
+/* ==========================================================================
+   GUTENBERG GLOBAL OVERRIDES
+   ========================================================================== */
+
+/* Remove default block spacing before template parts
+   Prevents unwanted gap above header/footer */
+.wp-site-blocks > .wp-block-template-part {
+  margin-block-start: 0;
 }

@@ -132,11 +132,9 @@
         { "slug": "9", "name": "9", "size": "8.0rem" }
       ]
     },
-
     "border": {
       "radius": true
     },
-
     "shadow": {
       "defaultPresets": false,
       "presets": [
