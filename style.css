@@ -28,6 +28,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .constrained-75 {
+    max-width: 100% !important;
+  }
+}
+
 /* ==========================================================================
    LAYOUT CONTAINERS & HELPERS
    ========================================================================== */
@@ -42,6 +48,26 @@
 /* Alignment helper */
 .align-center {
   align-items: center;
+}
+
+/* Linker kolom: verticale verdeling */
+.intro-card-media {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 2rem;
+}
+
+/* Afbeelding vult resterende hoogte */
+.intro-card-media figure {
+  flex-grow: 1;
+  margin: 0;
+}
+
+.intro-card-media img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* ==========================================================================

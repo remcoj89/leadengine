@@ -104,13 +104,13 @@
         }
       ],
       "fontSizes": [
-        { "slug": "xs", "name": "XS", "size": "1.2rem" },
-        { "slug": "sm", "name": "S", "size": "1.4rem" },
-        { "slug": "md", "name": "M", "size": "1.6rem" },
-        { "slug": "lg", "name": "L", "size": "2.0rem" },
-        { "slug": "xl", "name": "XL", "size": "2.4rem" },
-        { "slug": "2xl", "name": "2XL", "size": "3.2rem" },
-        { "slug": "3xl", "name": "3XL", "size": "4.0rem" }
+        { "slug": "xs", "name": "XS", "size": "0.875rem" },
+        { "slug": "sm", "name": "S", "size": "1rem" },
+        { "slug": "md", "name": "M", "size": "1.125rem" },
+        { "slug": "lg", "name": "L", "size": "1.5rem" },
+        { "slug": "xl", "name": "XL", "size": "1.875rem" },
+        { "slug": "2xl", "name": "2XL", "size": "2.25rem" },
+        { "slug": "3xl", "name": "3XL", "size": "2.5rem" }
       ],
       "lineHeight": true
     },
