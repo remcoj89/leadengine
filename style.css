@@ -158,9 +158,6 @@ img {
   list-style: none;
 }
 
-
-
-
 /* ==========================================================================
    GUTENBERG GLOBAL OVERRIDES
    ========================================================================== */
@@ -170,3 +167,19 @@ img {
 .wp-site-blocks > .wp-block-template-part {
   margin-block-start: 0;
 }
+
+/* ==========================================================================
+  FAQ Accordion
+   ========================================================================== */
+
+/* Basic state */
+.wp-block-accordion-heading__toggle-icon {
+  color: var(--wp--preset--color--ocean-mist);
+  transition: all 1s ease-in-out;
+}
+
+/* Open state */
+.wp-block-accordion-heading__toggle[aria-expanded="true"]
+.wp-block-accordion-heading__toggle-icon {
+    color: var(--wp--preset--color--rose-punch);
+  }
