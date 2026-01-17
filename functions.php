@@ -24,5 +24,68 @@ function leadmagnetEnqueueAssets(): void
     // Optional: front-end custom CSS (if you prefer splitting)
     // wp_enqueue_style('leadmagnet-front', get_theme_file_uri('assets/css/front.css'), [], $themeVersion);
 }
+
+/**
+ * Add inline font-face CSS to ensure fonts load correctly
+ */
+function leadmagnetAddFontFaces(): void
+{
+    $themeUri = get_template_directory_uri();
+    
+    $fontFaces = "
+    /* Merriweather Regular */
+    @font-face {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('{$themeUri}/assets/fonts/Merriweather24pt-Regular.woff2') format('woff2'),
+           url('{$themeUri}/assets/fonts/Merriweather24pt-Regular.woff') format('woff');
+    }
+    
+    /* Merriweather Bold */
+    @font-face {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('{$themeUri}/assets/fonts/Merriweather24pt-Bold.woff2') format('woff2'),
+           url('{$themeUri}/assets/fonts/Merriweather24pt-Bold.woff') format('woff');
+    }
+    
+    /* Lato Regular */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: url('{$themeUri}/assets/fonts/Lato-Regular.woff2') format('woff2'),
+           url('{$themeUri}/assets/fonts/Lato-Regular.woff') format('woff');
+    }
+    
+    /* Lato Bold */
+    @font-face {
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: url('{$themeUri}/assets/fonts/Lato-Bold.woff2') format('woff2'),
+           url('{$themeUri}/assets/fonts/Lato-Bold.woff') format('woff');
+    }
+    
+    /* Lato Italic */
+    @font-face {
+      font-family: 'Lato';
+      font-style: italic;
+      font-weight: 400;
+      font-display: swap;
+      src: url('{$themeUri}/assets/fonts/Lato-Italic.woff2') format('woff2'),
+           url('{$themeUri}/assets/fonts/Lato-Italic.woff') format('woff');
+    }
+    ";
+    
+    wp_add_inline_style('leadmagnet-style', $fontFaces);
+}
 add_action("wp_enqueue_scripts", "leadmagnetEnqueueAssets");
+add_action("wp_enqueue_scripts", "leadmagnetAddFontFaces", 20);
 
