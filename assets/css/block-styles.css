@@ -1,0 +1,136 @@
+/**
+ * Block Styles - WordPress Convention
+ * Custom block styles that can be applied via the editor
+ */
+
+/* ==========================================================================
+   CHECKMARK LIST STYLE
+   ========================================================================== */
+/* This style can be applied to any list block via the block styles panel */
+
+.wp-block-list.is-style-checkmark,
+.wp-block-list.checkmark-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.wp-block-list.is-style-checkmark li,
+.wp-block-list.checkmark-list li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: var(--wp--preset--spacing--2);
+}
+
+.wp-block-list.is-style-checkmark li::before,
+.wp-block-list.checkmark-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--wp--preset--color--ocean-mist);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wp-block-list.is-style-checkmark li::after,
+.wp-block-list.checkmark-list li::after {
+  content: '✓';
+  position: absolute;
+  left: 0.375rem;
+  top: 0.1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+/* ==========================================================================
+   FULL BLEED UTILITIES
+   ========================================================================== */
+/* These classes can be added via the Advanced panel in block settings */
+
+.full-bleed-left {
+  margin-left: calc(50% - 50vw);
+  padding-left: calc(50vw - 50%);
+}
+
+/* ==========================================================================
+   ESSENTIAL OVERRIDES ONLY
+   ========================================================================== */
+
+/* Prevent horizontal scrollbar */
+html,
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.wp-site-blocks {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+/* Remove default block spacing before template parts */
+.wp-site-blocks > .wp-block-template-part {
+  margin-block-start: 0;
+}
+
+/* Header fixed positioning */
+.site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 100;
+}
+
+@media (width <= 768px) {
+  .site-header {
+    position: relative;
+  }
+}
+
+/* ==========================================================================
+   HERO SPLIT SECTION - IMAGE SIZING
+   ========================================================================== */
+
+/* Force column widths for hero split */
+.hero-split-section .wp-block-columns .wp-block-column:first-child {
+  flex-basis: 35% !important;
+  max-width: 35%;
+}
+
+.hero-split-section .wp-block-columns .wp-block-column:last-child {
+  flex-basis: 65% !important;
+  max-width: 65%;
+}
+
+/* Limit image size within the column */
+.hero-split-section .wp-block-column:first-child .wp-block-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero-split-section .wp-block-column:first-child .wp-block-image img {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 781px) {
+  .hero-split-section .wp-block-columns {
+    flex-direction: column;
+  }
+  
+  .hero-split-section .wp-block-columns .wp-block-column:first-child,
+  .hero-split-section .wp-block-columns .wp-block-column:last-child {
+    flex-basis: 100% !important;
+    max-width: 100%;
+  }
+}

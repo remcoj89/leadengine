@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Sales Info Card – Split (Showit style)
- * Slug: leadmagnet/sales-info-card
+ * Title: Info Card
+ * Slug: leadmagnet/info-card
  * Categories: banner
  * Inserter: true
  */

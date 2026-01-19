@@ -7,6 +7,16 @@ function leadmagnetSetup(): void
     add_theme_support("post-thumbnails");
     add_theme_support("editor-styles");
     add_editor_style("assets/css/editor.css");
+    
+    // Register custom block styles
+    register_block_style(
+        'core/list',
+        array(
+            'name'         => 'checkmark',
+            'label'        => __('Checkmark List', 'leadengine'),
+            'style_handle' => 'leadmagnet-block-styles',
+        )
+    );
 }
 add_action("after_setup_theme", "leadmagnetSetup");
 
@@ -21,8 +31,13 @@ function leadmagnetEnqueueAssets(): void
         $themeVersion,
     );
 
-    // Optional: front-end custom CSS (if you prefer splitting)
-    // wp_enqueue_style('leadmagnet-front', get_theme_file_uri('assets/css/front.css'), [], $themeVersion);
+    // Block styles for custom block styles
+    wp_enqueue_style(
+        "leadmagnet-block-styles",
+        get_theme_file_uri("assets/css/block-styles.css"),
+        ["leadmagnet-style"],
+        $themeVersion,
+    );
 }
 
 /**

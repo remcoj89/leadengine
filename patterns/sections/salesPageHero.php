@@ -1,16 +1,19 @@
 <?php
 /**
- * Title: Sales Hero – Split (Showit style)
- * Slug: leadmagnet/sales-page-hero
+ * Title: Hero Section Image Right
+ * Slug: leadmagnet/hero-section-image-right
  * Categories: banner
  * Inserter: true
  */
 ?>
 
-<!-- wp:group {"metadata":{"name":"salesPageHeroSection"},"style":{"spacing":{"padding":{"top":"var:preset|spacing|6","bottom":"var:preset|spacing|6"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-top:var(--wp--preset--spacing--6);padding-bottom:var(--wp--preset--spacing--6)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|5"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|8"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--8)"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
+<!-- wp:group {"metadata":{"name":"hero-section-image-right"},"style":{"spacing":{"blockGap":"var:preset|spacing|5","margin":{"top":"var:preset|spacing|8","bottom":"0"}}},"layout":{"type":"grid","columnCount":4,"minimumColumnWidth":null}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--8);margin-bottom:0"><!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|8"}},"layout":{"columnSpan":1}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--8)"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"spacing":{"padding":{"left":"var:preset|spacing|4"}},"layout":{"columnSpan":1}},"layout":{"type":"flex","orientation":"vertical","verticalAlignment":"center"}} -->
+<div class="wp-block-group" style="padding-left:var(--wp--preset--spacing--4)"><!-- wp:paragraph {"style":{"typography":{"textTransform":"uppercase"}}} -->
 <p style="text-transform:uppercase">leefstijs begeleiding aanhuis</p>
 <!-- /wp:paragraph -->
 
@@ -29,8 +32,7 @@
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
 
-<!-- wp:image {"id":48,"scale":"cover","sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":{"topLeft":"150px"}},"layout":{"selfStretch":"fill","flexSize":null}}} -->
-<figure class="wp-block-image size-large has-custom-border"><img src="http://leadengine.local/wp-content/uploads/2025/12/trajecten-1024x681.webp" alt="vrouw die geniet van de zonsondergang" class="wp-image-48" style="border-top-left-radius:150px;object-fit:cover"/></figure>
+<!-- wp:image {"id":48,"aspectRatio":"3/2","scale":"cover","sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":{"topLeft":"150px"}},"layout":{"columnSpan":2,"rowSpan":1},"spacing":{"margin":{"top":"0","bottom":"0","left":"0","right":"0"}}}} -->
+<figure class="wp-block-image size-large has-custom-border" style="margin-top:0;margin-right:0;margin-bottom:0;margin-left:0"><img src="http://leadengine.local/wp-content/uploads/2025/12/trajecten-1024x681.webp" alt="vrouw die geniet van de zonsondergang" class="wp-image-48" style="border-top-left-radius:150px;aspect-ratio:3/2;object-fit:cover"/></figure>
 <!-- /wp:image --></div>
-<!-- /wp:group --></div>
 <!-- /wp:group -->
