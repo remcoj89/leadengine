@@ -4,8 +4,8 @@
   "settings": {
     "appearanceTools": true,
     "layout": {
-      "contentSize": "1140px",
-      "wideSize": "1200px"
+      "contentSize": "1200px",
+      "wideSize": "1440px"
     },
     "color": {
       "defaultPalette": false,
@@ -180,6 +180,9 @@
         }
       },
       "core/image": {
+        "dimensions": {
+          "maxWidth": "100%"
+        },
         "spacing": {
           "margin": { "top": "0", "bottom": "0" }
         }

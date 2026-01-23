@@ -1,5 +1,5 @@
 /**
- * Theme Name:        Lead Engine
+ * Theme Name:        Template Copy
  * Theme URI:         https://westend-digital.nl
  * Description:       Custom theme description...
  * Version:           1.0.0
@@ -42,32 +42,112 @@
 .wp-block-accordion-heading__toggle-icon {
   color: var(--wp--preset--color--ocean-mist);
   transition: all 1s ease-in-out;
+  font-size: 2.5rem;
 }
 
 /* Open state */
 .wp-block-accordion-heading__toggle[aria-expanded="true"]
-.wp-block-accordion-heading__toggle-icon {
-    color: var(--wp--preset--color--rose-punch);
+  .wp-block-accordion-heading__toggle-icon {
+  color: var(--wp--preset--color--rose-punch);
+}
 
+/* ==========================================================================
+   Standard Overrides
+  ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin: unset;
+  padding: unset;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Resets
+  ========================================================================== */
+
+img {
+  font-style: italic;
+  height: auto;
+  max-width: 100%;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+@media ( width <= 1024px ) {
+  .display-none-mobile {
+    display: none;
   }
-
-
-    /* ==========================================================================
-     Resets
-     ========================================================================== */
+}
 
 
 /* ==========================================================================
-    Hero Imgae
-     ========================================================================== */
-.hero-image-bg {
-  position: relative;
-  height: 90vh;
+    Hero Image
+   ========================================================================== */
+
+.hero-flex {
+  max-height: 663px;
+
+  .hero-image-wrapper {
+    margin-inline-end: 10vw;
+    height: 663px;
+    position: relative;
+    width: 40%;
+  }
+
+  .hero-image-wrapper img {
+    position: absolute;
+    right: -45%;
+    object-fit: contain;
+    object-position: center;
+    height: 500px;
+  }
+
+  .hero-content-wrapper {
+    max-width: 55ch;
+  }
 }
 
-.hero-image-bg > figure {
-  position: absolute;
-  right: -5%;
-  bottom: 0;
-  height: 75vh;
+
+/* ==========================================================================
+    Iframe Map Styles
+   ========================================================================== */
+
+   .map-iframe-wrapper {
+     position: relative;
+     width: 100%;
+     aspect-ratio: 1 / 1; /* vierkant */
+     /* aspect-ratio: 16 / 9;  als je dat wilt */
+    }
+
+    .map-iframe-wrapper iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+
+    .card-icon {
+      width: 2rem;
+  height: 2rem;;
 }
+
+/* ==========================================================================
+    Footer Styles
+   ========================================================================== */
+
+   .footer-list {
+    text-align: end;
+   }
