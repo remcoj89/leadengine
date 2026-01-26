@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- wp:generateblocks/element {"uniqueId":"1469b780","tagName":"div","styles":{"@media (max-width:1024px)":{"paddingLeft":"2.5rem","paddingRight":"2.5rem"}},"css":"@media (max-width:1024px){.gb-element-1469b780{padding-left:2.5rem;padding-right:2.5rem}}","metadata":{"name":"Flex Card Section"}} -->
+<!-- wp:generateblocks/element {"uniqueId":"1469b780","tagName":"div","styles":{"@media (max-width:1024px)":{"paddingLeft":"2.5rem","paddingRight":"2.5rem"},"paddingTop":"5rem","paddingBottom":"5rem"},"css":".gb-element-1469b780{padding-bottom:5rem;padding-top:5rem}@media (max-width:1024px){.gb-element-1469b780{padding-left:2.5rem;padding-right:2.5rem}}","metadata":{"name":"Flex Card Section"}} -->
 <div class="gb-element-1469b780">
   <!-- wp:group {"layout":{"type":"constrained","contentSize":"","wideSize":""}} -->
   <div class="wp-block-group">
@@ -19,7 +19,6 @@
         <!-- wp:heading -->
         <h2 class="wp-block-heading">Wanneer klachten normaal lijken te worden</h2>
         <!-- /wp:heading -->
-
         <!-- wp:generateblocks/media {"uniqueId":"fd7bdc29","tagName":"img","styles":{"maxWidth":"100%","objectFit":"cover","width":"auto","borderTopLeftRadius":"16px","borderTopRightRadius":"16px","borderBottomRightRadius":"16px","borderBottomLeftRadius":"16px","alignItems":"stretch","justifyContent":"space-around","aspectRatio":"1/1"},"css":".gb-media-fd7bdc29{align-items:stretch;aspect-ratio:1/1;justify-content:space-around;max-width:100%;object-fit:cover;width:auto;border-radius:16px}","htmlAttributes":{"alt":"Uitegputte man met zijn gezich op het toetsenbord van zijn laptop","title":"burn-out","src":"http://leadengine.local/wp-content/uploads/2025/12/burn-out-scaled.webp"},"mediaId":36} -->
         <img class="gb-media-fd7bdc29" alt="Uitegputte man met zijn gezich op het toetsenbord van zijn laptop" title="burn-out" src="http://leadengine.local/wp-content/uploads/2025/12/burn-out-scaled.webp"/>
         <!-- /wp:generateblocks/media -->
@@ -31,11 +30,9 @@
         <!-- wp:paragraph -->
         <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio pellentesque cursus semper fermentum tempus, sociis consequat at phasellus fusce sociosqu.<br></p>
         <!-- /wp:paragraph -->
-
         <!-- wp:paragraph {"style":{"elements":{"link":{"color":{"text":"var:preset|color|ocean-mist"}}}},"textColor":"ocean-mist","fontSize":"lg"} -->
         <p class="has-ocean-mist-color has-text-color has-link-color has-lg-font-size">"Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse."<br></p>
         <!-- /wp:paragraph -->
-
         <!-- wp:paragraph -->
         <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio pellentesque cursus semper fermentum tempus, sociis consequat at phasellus fusce sociosqu.<br></p>
         <!-- /wp:paragraph -->

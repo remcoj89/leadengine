@@ -2,77 +2,45 @@
 /**
  * Title: Flex About Me Section
  * Slug: leadmagnet/section-flex-image-right
- * Description: A section introducing the "About Me" content with a flexible layout and image.
+ * Description: A section introducing the content with a flexible layout and image.
  * Categories: section
  * Inserter: yes
  */
 ?>
 
 
-<!-- wp:generateblocks/element {"uniqueId":"49ee6bbd","tagName":"div","styles":{"backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black, #1B2C39)","paddingTop":"5rem","paddingBottom":"5rem","position":"relative","@media (max-width:1024px)":{"paddingLeft":"2.5rem","paddingRight":"2.5rem"},"@media (max-width:767px)":{"paddingLeft":"2rem","paddingRight":"2rem"}},"css":".gb-element-49ee6bbd{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black,#1B2C39);padding-bottom:5rem;padding-top:5rem;position:relative}@media (max-width:1024px){.gb-element-49ee6bbd{padding-left:2.5rem;padding-right:2.5rem}}@media (max-width:767px){.gb-element-49ee6bbd{padding-left:2rem;padding-right:2rem}}","metadata":{"name":"Visie en werkwijze"}} -->
-<div class="gb-element-49ee6bbd">
-  <!-- wp:group {"style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","layout":{"type":"constrained"}} -->
-  <div class="wp-block-group has-white-color has-text-color has-link-color">
-    <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
-    <div class="wp-block-group">
-      <!-- wp:heading {"textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white","fontSize":"3xl"} -->
-      <h2 class="wp-block-heading has-text-align-center has-white-color has-text-color has-link-color has-3-xl-font-size">Visie en werkwijze</h2>
-      <!-- /wp:heading -->
-      <!-- wp:generateblocks/text {"uniqueId":"571f1f83","tagName":"p","styles":{"textAlign":"center","maxWidth":"65ch"},"css":".gb-text-571f1f83{max-width:65ch;text-align:center}"} -->
-      <p class="gb-text gb-text-571f1f83">Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio pellentesque cursus semper fermentum tempus, sociis consequat at phasellus fusce sociosqu.&nbsp;</p>
-      <!-- /wp:generateblocks/text -->
-      <!-- wp:generateblocks/element {"uniqueId":"7c55cc9f","tagName":"div","styles":{"display":"grid","gridTemplateColumns":"repeat(3, minmax(0, 1fr))","columnGap":"2rem","rowGap":"1em","@media (max-width:767px)":{"gridTemplateColumns":"1fr"},"paddingTop":"2rem","paddingBottom":"2rem","@media (max-width:1024px)":{"gridTemplateColumns":"1fr"}},"css":".gb-element-7c55cc9f{column-gap:2rem;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding-bottom:2rem;padding-top:2rem;row-gap:1em}@media (max-width:1024px){.gb-element-7c55cc9f{grid-template-columns:1fr}}@media (max-width:767px){.gb-element-7c55cc9f{grid-template-columns:1fr}}"} -->
-      <div class="gb-element-7c55cc9f">
-        <!-- wp:generateblocks/element {"uniqueId":"82c20367","tagName":"div","styles":{"paddingTop":"1.5rem","paddingBottom":"2.5rem","paddingLeft":"2.5rem","paddingRight":"2.5rem","color":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black, #1B2C39)","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite, #FFFFFF)","borderTopLeftRadius":"16px","borderTopRightRadius":"16px","borderBottomRightRadius":"16px","borderBottomLeftRadius":"16px","@media (max-width:767px)":{"paddingLeft":"1rem","paddingRight":"1rem"}},"css":".gb-element-82c20367{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite,#FFFFFF);color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black,#1B2C39);border-radius:16px;padding:1.5rem 2.5rem 2.5rem 2.5rem}@media (max-width:767px){.gb-element-82c20367{padding-left:1rem;padding-right:1rem}}","metadata":{"name":"Card"}} -->
-        <div class="gb-element-82c20367">
-          <!-- wp:generateblocks/text {"uniqueId":"c515af00","tagName":"p","styles":{"textAlign":"center","fontSize":"1.2rem","textTransform":"uppercase","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch, #e03d8e)","paddingTop":"1rem","paddingRight":"1rem","paddingBottom":"1rem","paddingLeft":"1rem","borderTopLeftRadius":"900px","borderTopRightRadius":"900px","borderBottomRightRadius":"900px","borderBottomLeftRadius":"900px","width":"2rem","height":"2rem"},"css":".gb-text-c515af00{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch,#e03d8e);font-size:1.2rem;height:2rem;text-align:center;text-transform:uppercase;width:2rem;border-radius:900px;padding:1rem}"} -->
-          <p class="gb-text gb-text-c515af00">1</p>
-          <!-- /wp:generateblocks/text -->
-          <!-- wp:heading {"level":3} -->
-          <h3 class="wp-block-heading">Stap nummer 1</h3>
-          <!-- /wp:heading -->
-          <!-- wp:paragraph -->
-          <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio </p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:generateblocks/element -->
-        <!-- wp:generateblocks/element {"uniqueId":"53194b28","tagName":"div","styles":{"paddingTop":"1.5rem","paddingBottom":"2.5rem","paddingLeft":"2.5rem","paddingRight":"2.5rem","color":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black, #1B2C39)","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite, #FFFFFF)","borderTopLeftRadius":"16px","borderTopRightRadius":"16px","borderBottomRightRadius":"16px","borderBottomLeftRadius":"16px","@media (max-width:767px)":{"paddingLeft":"1rem","paddingRight":"1rem"}},"css":".gb-element-53194b28{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite,#FFFFFF);color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black,#1B2C39);border-radius:16px;padding:1.5rem 2.5rem 2.5rem 2.5rem}@media (max-width:767px){.gb-element-53194b28{padding-left:1rem;padding-right:1rem}}","metadata":{"name":"Card"}} -->
-        <div class="gb-element-53194b28">
-          <!-- wp:generateblocks/text {"uniqueId":"d0e61fc4","tagName":"p","styles":{"textAlign":"center","fontSize":"1.2rem","textTransform":"uppercase","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch, #e03d8e)","paddingTop":"1rem","paddingRight":"1rem","paddingBottom":"1rem","paddingLeft":"1rem","borderTopLeftRadius":"900px","borderTopRightRadius":"900px","borderBottomRightRadius":"900px","borderBottomLeftRadius":"900px","width":"2rem","height":"2rem"},"css":".gb-text-d0e61fc4{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch,#e03d8e);font-size:1.2rem;height:2rem;text-align:center;text-transform:uppercase;width:2rem;border-radius:900px;padding:1rem}"} -->
-          <p class="gb-text gb-text-d0e61fc4">1</p>
-          <!-- /wp:generateblocks/text -->
-          <!-- wp:heading {"level":3} -->
-          <h3 class="wp-block-heading">Stap nummer 1</h3>
-          <!-- /wp:heading -->
-          <!-- wp:paragraph -->
-          <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio </p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:generateblocks/element -->
-        <!-- wp:generateblocks/element {"uniqueId":"3ffd168e","tagName":"div","styles":{"paddingTop":"1.5rem","paddingBottom":"2.5rem","paddingLeft":"2.5rem","paddingRight":"2.5rem","color":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black, #1B2C39)","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite, #FFFFFF)","borderTopLeftRadius":"16px","borderTopRightRadius":"16px","borderBottomRightRadius":"16px","borderBottomLeftRadius":"16px","@media (max-width:767px)":{"paddingLeft":"1rem","paddingRight":"1rem"}},"css":".gb-element-3ffd168e{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002dwhite,#FFFFFF);color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002djet-black,#1B2C39);border-radius:16px;padding:1.5rem 2.5rem 2.5rem 2.5rem}@media (max-width:767px){.gb-element-3ffd168e{padding-left:1rem;padding-right:1rem}}","metadata":{"name":"Card"}} -->
-        <div class="gb-element-3ffd168e">
-          <!-- wp:generateblocks/text {"uniqueId":"c239191e","tagName":"p","styles":{"textAlign":"center","fontSize":"1.2rem","textTransform":"uppercase","backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch, #e03d8e)","paddingTop":"1rem","paddingRight":"1rem","paddingBottom":"1rem","paddingLeft":"1rem","borderTopLeftRadius":"900px","borderTopRightRadius":"900px","borderBottomRightRadius":"900px","borderBottomLeftRadius":"900px","width":"2rem","height":"2rem"},"css":".gb-text-c239191e{background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch,#e03d8e);font-size:1.2rem;height:2rem;text-align:center;text-transform:uppercase;width:2rem;border-radius:900px;padding:1rem}"} -->
-          <p class="gb-text gb-text-c239191e">1</p>
-          <!-- /wp:generateblocks/text -->
-          <!-- wp:heading {"level":3} -->
-          <h3 class="wp-block-heading">Stap nummer 1</h3>
-          <!-- /wp:heading -->
-          <!-- wp:paragraph -->
-          <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio </p>
-          <!-- /wp:paragraph -->
-        </div>
-        <!-- /wp:generateblocks/element -->
+<!-- wp:generateblocks/element {"uniqueId":"109a38bd","tagName":"div","styles":{"paddingTop":"5rem","paddingBottom":"5rem"},"css":".gb-element-109a38bd{padding-bottom:5rem;padding-top:5rem}","metadata":{"name":"Flex Section Image Right"}} -->
+<div class="gb-element-109a38bd">
+  <!-- wp:group {"layout":{"type":"constrained"}} -->
+  <div class="wp-block-group">
+    <!-- wp:generateblocks/element {"uniqueId":"7a10d5f5","tagName":"div","styles":{"display":"grid","gridTemplateColumns":"repeat(2, minmax(0, 1fr))","columnGap":"2rem","rowGap":"1em","@media (max-width:767px)":{"gridTemplateColumns":"1fr"}},"css":".gb-element-7a10d5f5{column-gap:2rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));row-gap:1em}@media (max-width:767px){.gb-element-7a10d5f5{grid-template-columns:1fr}}"} -->
+    <div class="gb-element-7a10d5f5">
+      <!-- wp:generateblocks/element {"uniqueId":"7a4f940e","tagName":"div","styles":{"textAlign":"right","alignItems":"flex-end","display":"flex","flexDirection":"column","justifyContent":"center","maxWidth":"65ch"},"css":".gb-element-7a4f940e{align-items:flex-end;display:flex;flex-direction:column;justify-content:center;max-width:65ch;text-align:right}"} -->
+      <div class="gb-element-7a4f940e">
+        <!-- wp:heading -->
+        <h2 class="wp-block-heading">Call to action Section titel</h2>
+        <!-- /wp:heading -->
+
+        <!-- wp:paragraph -->
+        <p>Lorem ipsum dolor sit amet consectetur, adipiscing elit conubia fermentum cubilia sem, dis lobortis fames suspendisse. Morbi ultrices rhoncus himenaeos turpis iaculis suscipit aptent, montes odio</p>
+        <!-- /wp:paragraph -->
+
+        <!-- wp:generateblocks/text {"uniqueId":"8a34c67c","tagName":"a","styles":{"display":"inline-flex","alignItems":"center","backgroundColor":"#215bc2","color":"#ffffff","paddingTop":"0.5rem","paddingRight":"2rem","paddingBottom":"0.5rem","paddingLeft":"2rem","textDecoration":"none","\u0026:is(:hover, :focus)":{"backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch, #e03d8e)","color":"#ffffff","cursor":"pointer"},"borderTopLeftRadius":"900px","borderTopRightRadius":"900px","borderBottomRightRadius":"900px","borderBottomLeftRadius":"900px","fontSize":"1.6rem","justifyContent":"center"},"css":".gb-text-8a34c67c{align-items:center;background-color:#215bc2;color:#ffffff;display:inline-flex;font-size:1.6rem;justify-content:center;text-decoration:none;border-radius:900px;padding:0.5rem 2rem}.gb-text-8a34c67c:is(:hover,:focus){background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch,#e03d8e);color:#ffffff;cursor:pointer}","metadata":{"categories":["component"],"patternName":"leadmagnet/component-button-primary","name":"Button Primary Component"}} -->
+        <a class="gb-text gb-text-8a34c67c">call to action</a>
+        <!-- /wp:generateblocks/text -->
       </div>
       <!-- /wp:generateblocks/element -->
-      <!-- wp:generateblocks/text {"uniqueId":"5715cee9","tagName":"p","styles":{"textAlign":"center","fontSize":"1.5rem"},"css":".gb-text-5715cee9{font-size:1.5rem;text-align:center}"} -->
-      <p class="gb-text gb-text-5715cee9">Lorem ipsum dolor sit amet consectetur</p>
-      <!-- /wp:generateblocks/text -->
-      <!-- wp:generateblocks/text {"uniqueId":"68d9783e","tagName":"a","styles":{"display":"inline-flex","alignItems":"center","backgroundColor":"#215bc2","color":"#ffffff","paddingTop":"0.5rem","paddingRight":"2rem","paddingBottom":"0.5rem","paddingLeft":"2rem","textDecoration":"none","\u0026:is(:hover, :focus)":{"backgroundColor":"var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch, #e03d8e)","color":"#ffffff","cursor":"pointer"},"borderTopLeftRadius":"900px","borderTopRightRadius":"900px","borderBottomRightRadius":"900px","borderBottomLeftRadius":"900px","fontSize":"1.6rem","justifyContent":"center"},"css":".gb-text-68d9783e{align-items:center;background-color:#215bc2;color:#ffffff;display:inline-flex;font-size:1.6rem;justify-content:center;text-decoration:none;border-radius:900px;padding:0.5rem 2rem}.gb-text-68d9783e:is(:hover,:focus){background-color:var(\u002d\u002dwp\u002d\u002dpreset\u002d\u002dcolor\u002d\u002drose-punch,#e03d8e);color:#ffffff;cursor:pointer}"} -->
-      <a class="gb-text gb-text-68d9783e">call to action</a>
-      <!-- /wp:generateblocks/text -->
+
+      <!-- wp:generateblocks/element {"uniqueId":"a1294429","tagName":"figure","styles":{"borderTopLeftRadius":"16px","borderTopRightRadius":"16px","borderBottomRightRadius":"16px","borderBottomLeftRadius":"16px"},"css":".gb-element-a1294429{border-radius:16px}","metadata":{"name":"Image"}} -->
+      <figure class="gb-element-a1294429">
+        <!-- wp:generateblocks/media {"uniqueId":"d13c0dce","tagName":"img","styles":{"height":"30rem","maxWidth":"100%","objectFit":"cover","width":"auto"},"css":".gb-media-d13c0dce{height:30rem;max-width:100%;object-fit:cover;width:auto}","htmlAttributes":{"alt":"Vol energie op het strand tijdens de zonsondergang","title":"klaar-voor-de-lijfstijl","src":"http://leadengine.local/wp-content/uploads/2025/12/klaar-voor-de-lijfstijl-819x1024.webp"}} -->
+        <img class="gb-media-d13c0dce" alt="Vol energie op het strand tijdens de zonsondergang" title="klaar-voor-de-lijfstijl" src="http://leadengine.local/wp-content/uploads/2025/12/klaar-voor-de-lijfstijl-819x1024.webp"/>
+        <!-- /wp:generateblocks/media -->
+      </figure>
+    <!-- /wp:generateblocks/element -->
     </div>
-    <!-- /wp:group -->
+  <!-- /wp:generateblocks/element -->
   </div>
-  <!-- /wp:group -->
+<!-- /wp:group -->
 </div>
 <!-- /wp:generateblocks/element -->

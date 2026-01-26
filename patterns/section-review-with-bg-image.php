@@ -23,7 +23,7 @@
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph {"align":"center","style":{"typography":{"textTransform":"uppercase"}}} -->
-    <p class="has-text-align-center" style="text-transform:uppercase">- Naan van de tevreden klant</p>
+    <p class="has-text-align-center" style="text-transform:uppercase">- Naan van een tevreden klant</p>
     <!-- /wp:paragraph -->
   </div>
   <!-- /wp:generateblocks/element -->
