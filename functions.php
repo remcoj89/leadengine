@@ -66,6 +66,29 @@ function leadmagnet_enqueue_assets(): void
 add_action("wp_enqueue_scripts", "leadmagnet_enqueue_assets");
 
 /**
+ * Enqueue Editor Assets
+ */
+function leadmagnet_enqueue_editor_assets(): void
+{
+    $themeVersion = wp_get_theme()->get("Version");
+
+    wp_enqueue_style(
+        "leadmagnet-style",
+        get_stylesheet_uri(),
+        [],
+        $themeVersion,
+    );
+
+    wp_enqueue_style(
+        "leadmagnet-block-styles",
+        get_theme_file_uri("assets/css/block-styles.css"),
+        ["leadmagnet-style"],
+        $themeVersion,
+    );
+}
+add_action("enqueue_block_editor_assets", "leadmagnet_enqueue_editor_assets");
+
+/**
  * Add inline font-face CSS
  */
 function leadmagnet_add_font_faces(): void
