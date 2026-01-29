@@ -18,6 +18,14 @@
 /* ==========================================================================
    1. RESETS & BASE ELEMENTS
    ========================================================================== */
+/* CSS Reset voor elementen die theme.json niet bereikt */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 img {
   font-style: italic;
@@ -25,7 +33,12 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.2;
   margin: unset;
   padding: unset;
@@ -35,28 +48,37 @@ h1, h2, h3, h4, h5, h6 {
    2. COMPONENTS
    ========================================================================== */
 
+/* --- Sticky Header --- */
+
+header {
+  inset-inline: 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
 /* --- Custom List Styles --- */
 .is-style-checkmark,
 .is-style-cross {
   list-style-type: none;
-  padding-left: 0;
   margin-left: 0;
+  padding-left: 0;
 
   & li {
-    position: relative;
-    padding-left: 1.75em;
-    margin-bottom: 0.75em;
     line-height: 1.5;
+    margin-bottom: 0.75em;
+    padding-left: 1.75em;
+    position: relative;
 
     &::before {
-      content: '';
-      position: absolute;
-      left: 0;
-      top: 0.2em;
-      width: 1.2em;
-      height: 1.2em;
+      content: "";
       background-repeat: no-repeat;
       background-size: contain;
+      height: 1.2em;
+      left: 0;
+      position: absolute;
+      top: 0.2em;
+      width: 1.2em;
     }
   }
 }
@@ -74,8 +96,8 @@ h1, h2, h3, h4, h5, h6 {
 .wp-block-accordion-heading__toggle {
   & .wp-block-accordion-heading__toggle-icon {
     color: var(--wp--preset--color--ocean-mist);
-    transition: all 0.3s ease-in-out;
     font-size: 2.5rem;
+    transition: all 0.3s ease-in-out;
   }
 
   &[aria-expanded="true"] .wp-block-accordion-heading__toggle-icon {
@@ -85,16 +107,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* --- Iframe Map --- */
 .map-iframe-wrapper {
+  aspect-ratio: 1 / 1;
   position: relative;
   width: 100%;
-  aspect-ratio: 1 / 1;
 
   & iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
     border: 0;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -104,8 +126,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-icon {
-  width: 2rem;
   height: 2rem;
+  width: 2rem;
 }
 
 /* --- Embeded Map --- */
@@ -113,13 +135,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   width: 100%;
 
-
-    .iframe {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
+  .iframe {
     border: 0;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    width: 100%;
   }
 }
 
@@ -127,18 +148,24 @@ h1, h2, h3, h4, h5, h6 {
    3. UTILITIES & RESPONSIVE
    ========================================================================== */
 
-.overflow-hidden { overflow: hidden; }
-.list-style-none { list-style: none; }
+.overflow-hidden {
+  overflow: hidden;
+}
+.list-style-none {
+  list-style: none;
+}
 
 /* Responsive Overrides met Nesting */
 @media (width <= 1024px) {
-  .display-none-mobile { display: none; }
+  .display-none-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 980px) {
   .wp-block-column {
-    padding-right: var(--wp--preset--spacing--4) !important;
     padding-left: var(--wp--preset--spacing--4) !important;
+    padding-right: var(--wp--preset--spacing--4) !important;
   }
 }
 
